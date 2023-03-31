@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sorting Hat</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer type="text/javascript" src="./src/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h3>Sorting Hat</h3>
+    </header>
+
+    <!-- HOUSE BAR -->
+    <div id="house-bar">
+        <!-- House Images Here -->
+    </div>
+
+    <!-- House Details -->
+    <div id="house-basic-info">
+        <img 
+            class="house-image" 
+            src="SET A DEFAULT IMAGE HERE" 
+            alt="house-image" 
+            id="house-img" 
+        />
+        <h2 class="house-name" id="house-name">Insert House Name</h2>
+        <h3 class="house-animal" id="house-animal">Insert House Animal Here</h3>
+    </div>
+
+    <!-- Dropdown Question Div -->
+    <div id="sorting-question">
+        <label for="sorting-answer">Which following trait best describes you</label>
+        <select id="traits-dropdown" name="sorting-answer">
+            <option id="select-trait">select your trait</option>
+            <option value="a" id="a">trait1</option>
+            <option value="b" id="b">trait2</option>
+            <option value="c" id="c">trait3</option>
+            <option value="d" id="d">trait4</option>
+            <option value="e" id="e">trait5</option>
+            <option value="f" id="f">trait6</option>
+            <option value="g" id="g">trait7</option>
+            <option value="h" id="h">trait8</option>
+            <!-- I hand added id here - not sure right or not-->
+        </select>
+    </div>
+
+    <!-- Submit Form -->
+    <form id="enter-password-form">
+        <label for="new-student-name">Name: </label>
+        <input type="text" name="new-student-name" id="new-student-name" />
+        <label for="password">Password: </label>
+        <input type="text" name="password" id="password" />
+        <input type="submit" value="Enter the common room" />
+    </form>
+
+</body>
+
+</html>
