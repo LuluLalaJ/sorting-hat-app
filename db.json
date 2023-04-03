@@ -1,0 +1,32 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "name": "Gryffindor",
+      "crest": "http://PLACHOLDER",
+      "image": "http://PLACHOLDER",
+      "password": "PLACEHOLDER"
+    },
+    {
+      "id": 2,
+      "name": "Slytherin",
+      "crest": "http://PLACHOLDER",
+      "image": "http://PLACHOLDER",
+      "password": "PLACEHOLDER"
+    },
+        {
+      "id": 3,
+      "name": "Hufflepuff",
+      "crest": "http://PLACHOLDER",
+      "image": "http://PLACHOLDER",
+      "password": "PLACEHOLDER"
+    },
+        {
+      "id": 4,
+      "name": "Ravenclaw",
+      "crest": "http://PLACHOLDER",
+      "image": "http://PLACHOLDER",
+      "password": "PLACEHOLDER"
+    }
+  ]
+}

@@ -18,7 +18,7 @@
 - Finalize MVP  
     - The goal is to have all the functionality working, even if it looks super simple;
     - So that we can improve the codes and make it prettier later while not breaking the code 
-    
+
 # 04-06 Thursday
 - Refracting Javascript 
 - Edit CSS so that the page looks prettier 
@@ -30,4 +30,3 @@
 - Discuss together before merging 
 - Commit regularly, name each commit concisely and meaningfully by starting with a verb
     - such as 'add eventlistener to submit button' etc. 
-
