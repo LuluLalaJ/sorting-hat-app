@@ -5,6 +5,7 @@
       "name": "Gryffindor",
       "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71qheAe+f6L._AC_UF894,1000_QL80_.jpg",
       "image": "http://PLACHOLDER",
+      "animal": "Lion", 
       "password": "Wattlebird"
     },
     {
@@ -12,6 +13,7 @@
       "name": "Slytherin",
       "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71SHyMkX6gL.jpg",
       "image": "http://PLACHOLDER",
+      "animal": "Snake", 
       "password": "Aspiration"
     },
         {
@@ -19,6 +21,7 @@
       "name": "Hufflepuff",
       "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71jTE5obH-L._AC_UF894,1000_QL80_.jpg",
       "image": "http://PLACHOLDER",
+      "animal": "Badger", 
       "password": "Helga"
     },
         {
@@ -26,6 +29,7 @@
       "name": "Ravenclaw",
       "crest": "https://m.media-amazon.com/images/I/61iys32RuAL._AC_SY355_.jpg",
       "image": "http://PLACHOLDER",
+      "animal": "Eagle",
       "password": "Nonbeing"
     }
   ]
