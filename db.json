@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Gryffindor",
-      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71qheAe+f6L._AC_UF894,1000_QL80_.jpg",
+      "crest": "./HP_crest/gryffindor.png",
       "image": "http://PLACHOLDER",
       "animal": "Lion", 
       "password": "Wattlebird"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Slytherin",
-      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71jTE5obH-L._AC_UF894,1000_QL80_.jpg", 
+      "crest": "./HP_crest/slytherin.png", 
       "image": "http://PLACHOLDER",
       "animal": "Snake", 
       "password": "Aspiration"
@@ -19,7 +19,7 @@
         {
       "id": 3,
       "name": "Hufflepuff",
-      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71SHyMkX6gL.jpg", 
+      "crest": "./HP_crest/hufflepuff.png", 
       "image": "http://PLACHOLDER",
       "animal": "Badger", 
       "password": "Helga"
@@ -27,7 +27,7 @@
         {
       "id": 4,
       "name": "Ravenclaw",
-      "crest": "https://m.media-amazon.com/images/I/61iys32RuAL._AC_SY355_.jpg",
+      "crest": "./HP_crest/ravenclaw.png",
       "image": "http://PLACHOLDER",
       "animal": "Eagle",
       "password": "Nonbeing"
