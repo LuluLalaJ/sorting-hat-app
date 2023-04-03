@@ -32,7 +32,8 @@
 
     <!-- Dropdown Question Div -->
     <div id="sorting-question">
-        <label for="sorting-answer">Which following trait best describes you</label>
+        <p>Ready to get sorted? Answer this quick question!</p>
+        <label for="sorting-answer">Which following trait best describes you?</label>
         <select id="traits-dropdown" name="sorting-answer">
             <option id="select-trait">select your trait</option>
             <option value="a" id="a">trait1</option>
@@ -45,9 +46,16 @@
             <option value="h" id="h">trait8</option>
             <!-- I hand added id here - not sure right or not-->
         </select>
+        <img src="ADD IMAGE IF NEEDED"/>
+    </div>
+
+    <!-- Announcing the sorting result -->
+    <div id="sorted-announcement">
+        <p></p>
     </div>
 
     <!-- Submit Form -->
+    <!-- Only Display Below After Sorting ?? -->
     <form id="enter-password-form">
         <label for="new-student-name">Name: </label>
         <input type="text" name="new-student-name" id="new-student-name" />
