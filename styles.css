@@ -3,51 +3,42 @@
     font-family: Garamond;
     box-sizing: border-box;
 }
-
 body {
     padding: 1rem;
     text-align: center;
-    background-color: #3a3a3a;
+    background-color: #3A3A3A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    background: linear-gradient(-45deg, #000000, #445366, #1f1c2a, #070e2d);
+    background: linear-gradient(-45deg, #000000, #445366, #1F1C2A, #070E2D);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
-    
+    /* height: 100vh; */
 }
 @keyframes gradient {
 0% {
     background-position: 0% 50%;
 }
-
 50% {
     background-position: 100% 50%;
 }
-
 100% {
     background-position: 0% 50%;
 }
 }
-
 header {
-    padding: 0.5rem;
+    padding: 1rem;
     width: 100%;
     color: white;
     /* background-color: black; */
 }
-
 #house-bar {
     display: flex;
     overflow-x: auto;
     margin: 1rem 0;
     max-width: calc(100vw - 2rem);
-
 }
-
 #house-bar img {
     flex: 0 1 auto;
     height: 150px;
@@ -55,19 +46,15 @@ header {
     cursor: pointer;
     border-radius: 10% ;
 }
-
 #house-bar img:last-child {
     margin-right: 0;
 }
-
 #house-basic-info {
     position: relative;
 }
-
 .house-image {
     height: 350px;
 }
-
 .house-name,
 .house-animal {
     position: absolute;
@@ -75,15 +62,12 @@ header {
     padding: 0.25rem 5rem 0.25rem 1rem;
     background-color: rgba(255, 255, 255, 0.8);
 }
-
 .house-name {
     bottom: 60px;
 }
-
 .house-animal {
     bottom: 20px;
 }
-
 form {
     margin: 1rem 0;
     width: 300px;
@@ -91,7 +75,6 @@ form {
     flex-direction: column;
     align-items: flex-start;
 }
-
 input {
     font-size: 1rem;
     border: 1px solid black;
@@ -100,7 +83,6 @@ input {
     margin: 0.25rem 0;
     width: 100%;
 }
-
 input[type="submit"] {
     color: white;
     border: 1px solid white;
@@ -108,23 +90,29 @@ input[type="submit"] {
     cursor: pointer;
     transition: all 0.3s;
 }
-
 input[type="submit"]:active {
     background-color: gray;
 }
 .members-card {
+    background-color: rgb(24, 25, 31);
     text-align: center;
-    border: grey solid 1px;
+    border: rgb(202, 121, 14) solid 1px;
     padding: 1rem;
     width: 15rem;
-    height: 25rem;
+    height: 18rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52
+    box-shadow: 3px 4px 5px #000000 ;
+    color:antiquewhite
 }
-
 .members-image {
     justify-self: center;
     height: 12rem;
     width: auto;
+    /* object-fit:  */
 }
+
+
+
+
+
