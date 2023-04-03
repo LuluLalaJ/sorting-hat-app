@@ -151,11 +151,11 @@ function renderCharacterInfo(character) {
         const membersImg = document.createElement('img')
         membersImg.src = character.image
         membersImg.className = 'members-image'
-        members.appendChild(membersImg)
+        membersCard.appendChild(membersImg)
     
         const membersName = document.createElement('p')
         membersName.textContent = character.name 
-        members.appendChild(membersName)
+        membersCard.appendChild(membersName)
     }
 
 
