@@ -1,0 +1,21 @@
+# 04-03 Monday
+- Draft html outline 
+- Create & populate JSON file 
+- Collect relevant images 
+# 04-04 Tuesday
+- Finish basic Javascript 
+- Create super simple css so that the page looks clean  
+# 04-05 Wednesday
+- Finalize MVP  
+# 04-06 Thursday
+- Refracting Javascript 
+- Edit CSS so that the page looks prettier 
+# 04-07 Friday 
+- Final Testing 
+
+# Basic Guideline
+- Whenever work on a new feature (such as additional functionality), do so on a new local branch
+- Discuss together before merging 
+- Commit regularly, name each commit concisely and meaningfully by starting with a verb
+    - such as 'add eventlistener to submit button' etc. 
+
