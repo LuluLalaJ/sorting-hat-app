@@ -9,7 +9,7 @@ WILL CHANGE LATER AFTER WE POPULATE IT WITH IMAGES/TEXTS */
 body {
     padding: 1rem;
     text-align: center;
-    background-color: #fafafa;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;

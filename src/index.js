@@ -124,7 +124,6 @@ function fetchApiInfo(event, house) {
 }
 
 function renderWizardWorldInfo(house) {
-    // console.log(house)
     const founder = document.getElementById('founder')
     const houseColors = document.getElementById('house-colors')
     const commonRoom = document.getElementById('common-room')
@@ -140,7 +139,6 @@ function renderWizardWorldInfo(house) {
 }
 
 function renderCharacterInfo(character) {
-    console.log(character)
     if (character.image !== "") {
         const members = document.getElementById('same-house-members')
         
@@ -157,9 +155,4 @@ function renderCharacterInfo(character) {
         membersName.textContent = character.name 
         membersCard.appendChild(membersName)
     }
-
-
-    
-    //maybe change this to famous house members?
-    //also need to change css to arrange the photos better 
 }
