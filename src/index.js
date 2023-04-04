@@ -56,7 +56,7 @@ function displayChosenHouse(event) {
     }
 
     houseBar.style.display = "none"
-    // document.getElementById('sorting-question').style.display = "none"
+    document.getElementById('sorting-question').style.display = "none"
 }
 
 function fetchChosenSchool(id) {
@@ -118,8 +118,14 @@ function fetchApiInfo(event, house) {
 
 function renderWizardWorldInfo(house) {
     console.log(house)
+    
 }
 
 function renderCharacterInfo(character) {
-    console.log(character)
+    const students = document.getElementById('same-house-students')
+    const studentImg = document.createElement('img')
+    studentImg.src = character.image
+    students.appendChild(studentImg)
+    //maybe change this to famous house members?
+    //also need to change css to arrange the photos better 
 }
