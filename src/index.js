@@ -1,8 +1,9 @@
-const localHouseUrl = "http://localhost:3000/houses"
+const localHouseUrl = "http://localhost:3000/houses/"
 const houseBar = document.getElementById('house-bar')
 const houseBasic = document.getElementById('house-basic-info')
 const dropdownBox = document.getElementById('traits-dropdown')
 const sortingAnnouncement = document.getElementById('sorted-announcement')
+const passwordForm = document.getElementById('enter-password-form')
 
 function fetchLocalHouses() {
     fetch(localHouseUrl)
@@ -17,7 +18,6 @@ function renderLocalHouse(house) {
     houseCrest.src = house.crest 
     houseCrest.onclick = (event) => displayCrestAndInfo(event, house)
     houseBar.appendChild(houseCrest)
-    // console.log(houseCrest)
 }
 
 function displayCrestAndInfo(event, house) {
@@ -36,45 +36,43 @@ dropdownBox.onchange = (event) => displayChosenHouse(event)
 
 function displayChosenHouse(event) {
     const option = event.target.value 
-
     if (option === 'a' || option === "h" ) {
-        console.log('Gryffindor')
-        // fetchChosenSchool(1)
-        announceHouseAndPassword('Gryffindor')
-        // THEN HOUSE1 
-        // 1) ANNOUNCING THE CHOSEN HOUSE + PASSWORD 
-        // 3) HIDE THE DROPDOWN BOX 
-    
+        fetchChosenSchool("1")
     } else if (option === "c" || option === "e") {
-        console.log('Slytherin')
-        // THEN HOUSE2 
-        // 1) ANNOUNCING THE CHOSEN HOUSE + PASSWORD 
-        // 3) HIDE THE DROPDOWN BOX 
+        fetchChosenSchool("2")
     } else if (option === "b" || option === "d") {
-        console.log('Hufflepuff')
-
+        fetchChosenSchool("3")
     } else {
-        console.log('Ravenclaw')
+        fetchChosenSchool("4")
     }
 
-    //hiding the house bar 
     houseBar.style.display = "none"
-
+    document.getElementById('sorting-question').style.display = "none"
 }
 
 function fetchChosenSchool(id) {
-    fetch(localHouseUrl)
+    fetch(localHouseUrl + id)
     .then(r => r.json())
-    .then(data => data.forEach(house => )) 
+    .then(data => announceHouseAndPassword(data) ) 
 }
     
-function announceHouseAndPassword(houseName) {
-    const announcement = document.getElementById('sorted-announcement')
-
-    const message = document.createElement('p')
-    message.textContent = `${houseName}!!!`
-
-    announcement.appendChild(message)
+function announceHouseAndPassword(house) {
+    const houseImg = document.getElementById('house-img')
+    houseImg.src = house.crest 
+    houseImg.alt = `${house.name}'s crest`
     
+    const houseName = document.getElementById('house-name')
+    houseName.textContent = house.name
+    
+    const houseAnimal = document.getElementById('house-animal')
+    houseAnimal.textContent = house.animal
+    
+    const message = document.getElementById('announcement-message')
+    message.textContent = `YOU ARE A ${house.name.toUpperCase()}!!!`
 
+    const password = document.createElement('h3')
+    password.textContent = `Your house common room password is ${house.password}!`
+    message.appendChild(password)
+
+    passwordForm.style.display = "block"
 }
