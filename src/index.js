@@ -1,4 +1,3 @@
-console.log("Test")
 const localHouseUrl = "http://localhost:3000/houses/"
 const wizardWorldUrl = "https://wizard-world-api.herokuapp.com/Houses/"
 const hpApiUrl = "https://hp-api.onrender.com/api/characters/house/"
@@ -33,6 +32,7 @@ function displayCrestAndInfo(event, house) {
     const houseImg = document.getElementById('house-img')
     houseImg.src = house.crest 
     houseImg.alt = `${house.name}'s crest`
+    
     const houseName = document.getElementById('house-name')
     houseName.textContent = house.name
     
