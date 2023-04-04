@@ -89,9 +89,11 @@ function announceHouseAndPassword(house) {
 
 function fetchApiInfo(event, house) {
     event.preventDefault()
+    let password = document.getElementById('password').value
     let wizardWorldHouseUrl = ""
     let characterUrl = ""
-//check password 
+//check password
+
     if (house.id === 1) {
         wizardWorldHouseUrl = wizardWorldUrl + idGryffindor
         characterUrl = hpApiUrl + "Gryffindor"
@@ -106,26 +108,58 @@ function fetchApiInfo(event, house) {
         characterUrl = hpApiUrl + "Ravenclaw"
     }
 
-    fetch(wizardWorldHouseUrl)
-    .then(r => r.json())
-    .then(houseData => renderWizardWorldInfo(houseData))
+    if (password !== house.password) {
+        alert("Your password is incorrect.")
+    }
+    else {
+        fetch(wizardWorldHouseUrl)
+        .then(r => r.json())
+        .then(houseData => renderWizardWorldInfo(houseData))
 
-    fetch(characterUrl)
-    .then(r => r.json())
-    .then(characterData => characterData.forEach( character => renderCharacterInfo(character)))
+        fetch(characterUrl)
+        .then(r => r.json())
+        .then(characterData => characterData.forEach( character => renderCharacterInfo(character)))
+    }
 
 }
 
 function renderWizardWorldInfo(house) {
-    console.log(house)
-    
+    // console.log(house)
+    const founder = document.getElementById('founder')
+    const houseColors = document.getElementById('house-colors')
+    const commonRoom = document.getElementById('common-room')
+    const element = document.getElementById('element')
+    const ghost = document.getElementById('ghost')
+    // const head = document.getElementById('head')
+
+    founder.textContent = `Your house founder is ${house.founder}` 
+    houseColors.textContent = `Your house colors are ${house.houseColours.toLowerCase()}`
+    commonRoom.textContent = `Your house's common room is the ${house.commonRoom}`
+    element.textContent = `Your house's element is ${house.element.toLowerCase()}`
+    ghost.textContent = `Your house ghost is ${house.ghost}`
 }
 
 function renderCharacterInfo(character) {
-    const students = document.getElementById('same-house-students')
-    const studentImg = document.createElement('img')
-    studentImg.src = character.image
-    students.appendChild(studentImg)
+    console.log(character)
+    if (character.image !== "") {
+        const members = document.getElementById('same-house-members')
+        
+        const membersCard = document.createElement('div')
+        membersCard.className = "members-card"
+        members.appendChild(membersCard)
+    
+        const membersImg = document.createElement('img')
+        membersImg.src = character.image
+        membersImg.className = 'members-image'
+        members.appendChild(membersImg)
+    
+        const membersName = document.createElement('p')
+        membersName.textContent = character.name 
+        members.appendChild(membersName)
+    }
+
+
+    
     //maybe change this to famous house members?
     //also need to change css to arrange the photos better 
 }
