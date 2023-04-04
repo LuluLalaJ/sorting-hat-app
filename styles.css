@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    font-family: Garamond;
+    margin: 0.5rem;
+    font-family: fantasy;
     box-sizing: border-box;
 }
 body {
@@ -31,20 +31,18 @@ header {
     padding: 1rem;
     width: 100%;
     color: white;
-    /* background-color: black; */
+    font-size: 2.5rem;
 }
 #house-bar {
     display: flex;
     overflow-x: auto;
-    margin: 1rem 0;
     max-width: calc(100vw - 2rem);
 }
 #house-bar img {
     flex: 0 1 auto;
     height: 150px;
-    margin-right: 0.5rem;
+    margin-right: 1.5rem;
     cursor: pointer;
-    border-radius: 10% ;
 }
 #house-bar img:last-child {
     margin-right: 0;
@@ -53,20 +51,36 @@ header {
     position: relative;
 }
 .house-image {
-    height: 350px;
+    height: 450px;
+    border-radius: 10%;
+    box-shadow: 0 0 60px #ccc
 }
 .house-name,
 .house-animal {
     position: absolute;
-    left: 10px;
-    padding: 0.25rem 5rem 0.25rem 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    left: 20px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgb(192, 192, 192, 0.5));
+    border-radius: 10px;
 }
 .house-name {
-    bottom: 60px;
+    bottom: 100px;
+    padding: 0.25rem 5rem 0.25rem 1rem;
 }
 .house-animal {
-    bottom: 20px;
+    bottom: 50px;
+    padding: 0.5rem 5rem 0.25rem 1rem;
+}
+
+#sorting-question {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+#traits-dropdown {
+    display: block;
+    margin: auto;
 }
 form {
     margin: 1rem 0;
