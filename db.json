@@ -6,7 +6,7 @@
       "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71qheAe+f6L._AC_UF894,1000_QL80_.jpg",
       "image": "http://PLACHOLDER",
       "animal": "Lion", 
-      "password": "Wattlebird"
+      "password": "Wattlebird",
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71jTE5obH-L._AC_UF894,1000_QL80_.jpg", 
       "image": "http://PLACHOLDER",
       "animal": "Snake", 
-      "password": "Aspiration"
+      "password": "Aspiration", 
     },
         {
       "id": 3,
