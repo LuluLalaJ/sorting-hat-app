@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Slytherin",
-      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71SHyMkX6gL.jpg",
+      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71jTE5obH-L._AC_UF894,1000_QL80_.jpg", 
       "image": "http://PLACHOLDER",
       "animal": "Snake", 
       "password": "Aspiration"
@@ -19,7 +19,7 @@
         {
       "id": 3,
       "name": "Hufflepuff",
-      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71jTE5obH-L._AC_UF894,1000_QL80_.jpg",
+      "crest": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71SHyMkX6gL.jpg", 
       "image": "http://PLACHOLDER",
       "animal": "Badger", 
       "password": "Helga"
