@@ -7,6 +7,9 @@ const houseBasic = document.getElementById('house-basic-info')
 const dropdownBox = document.getElementById('traits-dropdown')
 const sortingAnnouncement = document.getElementById('sorted-announcement')
 const passwordForm = document.getElementById('enter-password-form')
+const sortButton = document.getElementById(`sort-button`)
+const wandDropDown = document.getElementById("wands-dropdown")
+const taxDropDown = document.getElementById("tax-dropdown")
 
 const idGryffindor = "0367baf3-1cb6-4baf-bede-48e17e1cd005/"
 const idRavenclaw = "805fd37a-65ae-4fe5-b336-d767b8b7c73a/"
@@ -40,20 +43,73 @@ function displayCrestAndInfo(event, house) {
     houseAnimal.textContent = house.animal
 }
 
-dropdownBox.onchange = (event) => displayChosenHouse(event)
+//dropdownBox.onchange = (event) => displayChosenHouse(event)
+sortButton.onclick = (event) => displayChosenHouse(event)
+
 
 function displayChosenHouse(event) {
-    const option = event.target.value 
-    if (option === 'a' || option === "h" ) {
-        fetchChosenSchool("1")
-    } else if (option === "c" || option === "e") {
-        fetchChosenSchool("2")
-    } else if (option === "b" || option === "d") {
-        fetchChosenSchool("3")
-    } else {
-        fetchChosenSchool("4")
+    const option = dropdownBox.value
+    const wandOption = wandDropDown.value
+    const taxOption = taxDropDown.value
+    let maxScore = 0
+    let finalHouse = ""
+    let scoreObj = {
+        gScore: 0,
+        sScore: 0,
+        hScore: 0,
+        rScore: 0
     }
 
+    if (option === 'a' || option === "h" ) {
+        scoreObj.gScore += 1
+    } else if (option === "c" || option === "e") {
+        scoreObj.sScore += 1
+    } else if (option === "b" || option === "d") {
+        scoreObj.hScore += 1
+    } else if (option === "g" || option === "h") {
+        scoreObj.rScore += 1
+    }
+    
+    if (wandOption === 'a' || wandOption === "b" ) {
+        scoreObj.gScore += 1
+    } else if (wandOption === "c" || wandOption === "d") {
+        scoreObj.rScore += 1
+    } else if (wandOption === "e" || wandOption === "f") {
+        scoreObj.hScore += 1
+    } else if (wandOption === "g" || wandOption === "h") {
+        scoreObj.sScore += 1
+    }
+
+    if (taxOption === 'a') {
+        scoreObj.gScore += 1
+    } else if (taxOption === "b") {
+        scoreObj.hScore += 1
+    } else if (taxOption === "c") {
+        scoreObj.rScore += 1
+    } else if (taxOption === "d") {
+        scoreObj.sScore += 1
+    }
+    
+    for(let house in scoreObj) {
+        let score = scoreObj[house]
+        if(score > maxScore) {
+            maxScore = score
+            finalHouse = house
+        }
+    }
+    if(finalHouse === "") {
+        return alert("Choose your answer")
+    } else if (finalHouse === "gScore") {
+        fetchChosenSchool(1)
+    } else if (finalHouse === "sScore") {
+        fetchChosenSchool(2)
+    } else if (finalHouse === "hScore") {
+        fetchChosenSchool(3)
+    } else {
+        fetchChosenSchool(4)
+    }
+
+    console.log(finalHouse)
     houseBar.style.display = "none"
     document.getElementById('sorting-question').style.display = "none"
 }
