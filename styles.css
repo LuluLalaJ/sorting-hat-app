@@ -117,7 +117,7 @@ input[type="submit"]:active {
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px 5px #000000 ;
-    color:antiquewhite
+    color:aliceblue
 }
 .members-image {
     justify-self: center;

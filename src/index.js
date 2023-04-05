@@ -8,6 +8,7 @@ const dropdownBox = document.getElementById('traits-dropdown')
 const sortingAnnouncement = document.getElementById('sorted-announcement')
 const passwordForm = document.getElementById('enter-password-form')
 
+
 const idGryffindor = "0367baf3-1cb6-4baf-bede-48e17e1cd005/"
 const idRavenclaw = "805fd37a-65ae-4fe5-b336-d767b8b7c73a/"
 const idHufflepuff = "85af6295-fd01-4170-a10b-963dd51dce14/"
@@ -91,6 +92,7 @@ function fetchApiInfo(event, house) {
     let password = document.getElementById('password').value
     let wizardWorldHouseUrl = ""
     let characterUrl = ""
+//check password
 
     if (house.id === 1) {
         wizardWorldHouseUrl = wizardWorldUrl + idGryffindor
@@ -127,6 +129,7 @@ function renderWizardWorldInfo(house) {
     const commonRoom = document.getElementById('common-room')
     const element = document.getElementById('element')
     const ghost = document.getElementById('ghost')
+    // const head = document.getElementById('head')
 
     founder.textContent = `Your house founder is ${house.founder}` 
     houseColors.textContent = `Your house colors are ${house.houseColours.toLowerCase()}`
@@ -136,7 +139,6 @@ function renderWizardWorldInfo(house) {
 }
 
 function renderCharacterInfo(character) {
-    console.log(character)
     if (character.image !== "") {
         const members = document.getElementById('same-house-members')
         
