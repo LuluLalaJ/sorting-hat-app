@@ -126,6 +126,13 @@ input[type="submit"]:active {
     /* object-fit:  */
 }
 
+#sort-button {
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 
 
 

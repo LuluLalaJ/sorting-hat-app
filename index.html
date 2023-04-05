@@ -27,7 +27,7 @@
         <h3 class="house-animal" id="house-animal">Welcome new student!</h3>
     </div>
 
-    <div id="sorting-question">
+    <form id="sorting-question">
         <p>Ready to get sorted? Answer this quick question!</p>
         <label for="sorting-answer">Which following trait best describes you?</label>
         <select id="traits-dropdown" name="sorting-answer">
@@ -41,13 +41,36 @@
             <option value="g" id="g">Wit</option>
             <option value="h" id="h">Fortitude</option>
         </select>
-    </div>
+        <select id="wands-dropdown" name="sorting-answer">
+            <option id="select-trait">select your wand length</option>
+            <option value="a" id="a">3"</option>
+            <option value="b" id="b">5"</option>
+            <option value="c" id="c">7"</option>
+            <option value="d" id="d">9"</option>
+            <option value="e" id="e">11"</option>
+            <option value="f" id="f">13"</option>
+            <option value="g" id="g">15"</option>
+            <option value="h" id="h">17"</option>
+        </select>
+        <select id="tax-dropdown" name="sorting-answer">
+            <option id="select-trait">select your tax bracket</option>
+            <option value="a" id="a">$0 to $10,275</option>
+            <option value="b" id="b">$10,276 to $41,775</option>
+            <option value="c" id="c">$89,076 to $170,050</option>
+            <option value="d" id="d">$170,051 or more</option>
+        </select>
+        <button type="button" id="sort-button">
+            <img src="https://cdn11.bigcommerce.com/s-izu49/images/stencil/1280x1280/products/17076/19952/7250059__03069.1628531486.jpg?c=2" 
+            height="100" alt="hello there">
+            
+        </button>
+    </form>
 
     <div id="sorted-announcement">
         <h2 id="announcement-message"></h2>
     </div>
 
-   
+
     <form id="enter-password-form" style="display: none">
         <label for="password">Password: </label>
         <input type="text" name="password" id="password" />
