@@ -176,8 +176,9 @@ function fetchApiInfo(event, house) {
         .then(characterData => characterData.forEach( character => renderCharacterInfo(character)))
     }
 
-    passwordForm.reset()
     passwordForm.style.display = "none"
+    document.getElementById('sorted-announcement').style.display = "none"
+
 }
 
 function renderWizardWorldInfo(house) {
