@@ -78,13 +78,14 @@ header {
     
 }
 
-#traits-dropdown {
+select {
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 form {
     margin: 1rem 0;
-    width: 300px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
