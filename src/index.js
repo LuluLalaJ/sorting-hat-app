@@ -148,7 +148,6 @@ function fetchApiInfo(event, house) {
     let password = document.getElementById('password').value
     let wizardWorldHouseUrl = ""
     let characterUrl = ""
-//check password
 
     if (house.id === 1) {
         wizardWorldHouseUrl = wizardWorldUrl + idGryffindor
@@ -177,6 +176,8 @@ function fetchApiInfo(event, house) {
         .then(characterData => characterData.forEach( character => renderCharacterInfo(character)))
     }
 
+    passwordForm.reset()
+    passwordForm.style.display = "none"
 }
 
 function renderWizardWorldInfo(house) {
@@ -185,16 +186,18 @@ function renderWizardWorldInfo(house) {
     const commonRoom = document.getElementById('common-room')
     const element = document.getElementById('element')
     const ghost = document.getElementById('ghost')
-    // const head = document.getElementById('head')
 
     founder.textContent = `Your house founder is ${house.founder}` 
     houseColors.textContent = `Your house colors are ${house.houseColours.toLowerCase()}`
     commonRoom.textContent = `Your house's common room is the ${house.commonRoom}`
     element.textContent = `Your house's element is ${house.element.toLowerCase()}`
     ghost.textContent = `Your house ghost is ${house.ghost}`
+    
 }
 
 function renderCharacterInfo(character) {
+    const members = document.getElementById('members')
+    members.textContent = "Famous members from your house:"
     if (character.image !== "") {
         const members = document.getElementById('same-house-members')
         

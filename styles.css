@@ -73,7 +73,7 @@ header {
 form {
     margin-left: auto;
     margin-right: auto;
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
     width: 500px;
     display: flex;
@@ -95,7 +95,7 @@ input {
     width: 100%;
 }
 
-/* input[type="submit"] {
+input[type="submit"] {
     color: white;
     border: 1px solid white;
     background-color: black;
@@ -104,7 +104,7 @@ input {
 }
 input[type="submit"]:active {
     background-color: gray;
-} */
+}
 
 .members-card {
     background-color: rgb(24, 25, 31);
@@ -150,4 +150,11 @@ input[type="submit"]:active {
     font-size: small; 
 }
 
+#sorted-announcement {
+    color: white
+}
 
+#house-detail-info {
+    color: white;
+    font-size: 1.5rem; 
+}
