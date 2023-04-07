@@ -2,6 +2,7 @@
 Discover your Hogwarts House! As a new Hogwarts student, I can click on the images of the four houses and learn about each school. I will then answer a quick question about my personality and the website will sort me into one of the four houses. When a house is chosen, I will have access to the password to the common room. When I submit the password and my name, I will have access to more information about my house, including other students who are in the same house! 
 
 ## Magical Features
+![readmeimage](HP_crest/Readme image.png)
 - Display house information to the students 
 - Sort the new student into one of the four houses 
 - Show more information about the house to the new student when the secret password is entered 
