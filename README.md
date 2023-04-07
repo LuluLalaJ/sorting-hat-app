@@ -1,29 +1,30 @@
 # Sorting Hat Website 
-Discover your Hogwarts House! As a new Hogwarts student, I can click on the images of the four houses and learn about each school. I will then answer a quick question about my personality and the website will sort me into one of the four houses. When a house is chosen, I will have access to the password to the common room. When I submit the password and my name, I will have access to more information about my house, including other students who are in the same house! 
+We are excited to welcome you as a full time student at Hogwarts School of Witchcraft and Wizardry!
 
 ## Magical Features
-![readmeimage](HP_crest/pageImage.png)
-- Display house information to the students 
-- Sort the new student into one of the four houses 
-- Show more information about the house to the new student when the secret password is entered 
+Click on the various house crests to learn what animal represents said house. When you are ready,\
+answer the sorting hats questions as best you can to so we can determine what house you shall be\
+placed in. The sorting hat will consider all of your answers and place you in the house that best\
+fits you!
+
+Once you have been placed in a house, you will be given a password to your dormitory. Once inside,\
+you will be given access to that house's history and you will also get to meet all of your new roommates!
+
  
 ## Visuals
-We will use two external APIs and the JSON server with a db.json file
-- The Wizard World Api provides data on the four houses, including its founder, animal, colors etc. 
-- The Harry Potter Characters API provides data on the characters and profile photos 
-- The db.json provides additional information on the houses, such as the house passwords  
+![readmeimage](HP_crest/readmegif.gif)
+
 
 ## Usage
-- Getting started/Knowing where to start
-- The content of the db.json files 
-- Create a well-structured html file 
-- Defense against the dark arts :p 
+The sorting hat takes three answers and calculates the best house for you based on your selections. Each answer\
+is weighted towards a specific house and the house with the most points is chosen to be yours. Once chosen, the page\
+returns the password for that specific house allowing you to access various details for whichever house was chosen.
 
 ## Support
-App will use HTML/JS/CSS 
-Three different interactions:
-Drop down box for the personality quiz => onchange event 
-Click the image to display house information => onclick event 
-Enter your name and password => onsubmit event 
+If you feel you were placed into the wrong house by the sorting hat, Hogwarts School of Witchcraft and Wizardry\
+offers full time counseling as the sorting hat never makes a mistake!
 
 ## Authors
+### -Chen Jiang
+### -Melissa Elizondo
+### -Michael Urezzio
