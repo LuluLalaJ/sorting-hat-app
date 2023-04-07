@@ -174,11 +174,10 @@ function fetchApiInfo(event, house) {
         fetch(characterUrl)
         .then(r => r.json())
         .then(characterData => characterData.forEach( character => renderCharacterInfo(character)))
+
+        passwordForm.style.display = "none"
+        document.getElementById('sorted-announcement').style.display = "none"
     }
-
-    passwordForm.style.display = "none"
-    document.getElementById('sorted-announcement').style.display = "none"
-
 }
 
 function renderWizardWorldInfo(house) {
